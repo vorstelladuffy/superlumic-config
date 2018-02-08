@@ -10,7 +10,7 @@
       homebrew: name={{item}} state=latest
       with_items:
         - docker
-        - gp
+        - go
         - tmux       
     - name: install personal cask applications
       homebrew_cask: name={{item}} state=present
