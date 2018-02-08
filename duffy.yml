@@ -16,7 +16,7 @@
         - google-chrome
 # original to superlumic-config - allows preventing screen sleep
         - keepingyouawake
-	- skype
+        - skype
 	- sublime-text
 #        - kaleidoscope
 #        - hazel
