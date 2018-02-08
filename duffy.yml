@@ -17,7 +17,7 @@
 # original to superlumic-config - allows preventing screen sleep
         - keepingyouawake
         - skype
-	- sublime-text
+        - sublime-text
 #        - kaleidoscope
 #        - hazel
 #        - tower
