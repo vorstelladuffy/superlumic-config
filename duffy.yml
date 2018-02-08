@@ -14,7 +14,7 @@
       homebrew_cask: name={{item}} state=present
       with_items:
         - google-chrome
-	# original to superlumic-config - allows preventing screen sleep
+# original to superlumic-config - allows preventing screen sleep
         - keepingyouawake
 	- skype
 	- sublime-text
