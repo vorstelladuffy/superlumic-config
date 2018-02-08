@@ -9,12 +9,12 @@
     - name: install home brew applications
       homebrew: name={{item}} state=latest
       with_items:
-        - docker
         - go
         - tmux       
     - name: install personal cask applications
       homebrew_cask: name={{item}} state=present
       with_items:
+        - docker
         - google-chrome
 # original to superlumic-config - allows preventing screen sleep
         - keepingyouawake
