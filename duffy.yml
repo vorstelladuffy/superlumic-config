@@ -4,31 +4,34 @@
   connection: local
 
   tasks:
-    - homebrew_tap:
-        name: caskroom/fonts       
-    - name: install node
+#    - homebrew_tap:
+#        name: caskroom/fonts       
+    - name: install home brew applications
       homebrew: name={{item}} state=latest
       with_items:
-        - node       
+        - tmux       
     - name: install personal cask applications
       homebrew_cask: name={{item}} state=present
       with_items:
-        - kaleidoscope
-        - hazel
-        - tower
-        - superduper
-        - keepingyouawake
         - google-chrome
-        - microsoft-office
-        - paw
-        - adobe-creative-cloud
-        - alfred
-        - dropbox
-        - grammarly
-        - jaxx
-        - visual-studio-code
-        - font-fira-code
-        - google-drive-file-stream
+	# original to superlumic-config - allows preventing screen sleep
+        - keepingyouawake
+	- skype
+	- sublime-text
+#        - kaleidoscope
+#        - hazel
+#        - tower
+#        - superduper
+#        - microsoft-office
+#        - paw
+#        - adobe-creative-cloud
+#        - alfred
+#        - dropbox
+#        - grammarly
+#        - jaxx
+#        - visual-studio-code
+#        - font-fira-code
+#        - google-drive-file-stream
     - name: create ssh directory
       become: yes
       file:
@@ -49,25 +52,25 @@
       copy:
         src: files/ssh_config
         dest: /etc/ssh/ssh_config
-    - name: add to sudoers without password
-      become: yes
-      lineinfile: >
-        dest=/etc/sudoers
-        regexp="{{ item.regexp }}"
-        line="{{ item.line }}"
-        state=present
-        create=true
-      with_items:
-        - { regexp: '^roderik', line: 'roderik ALL=(ALL) NOPASSWD: ALL' }
+#    - name: add to sudoers without password
+#      become: yes
+#      lineinfile: >
+#        dest=/etc/sudoers
+#        regexp="{{ item.regexp }}"
+#        line="{{ item.line }}"
+#        state=present
+#        create=true
+#      with_items:
+#        - { regexp: '^roderik', line: 'roderik ALL=(ALL) NOPASSWD: ALL' }
 
-  roles:
-    - profile-all
-    - profile-developer
+#  roles:
+#    - profile-all
+#    - profile-developer
 
   vars:
-    - computername: moneta
-    - git_user_name: Roderik van der Veer
-    - git_user_email: roderik@settlemint.com
+    - computername: yttrium
+    - git_user_name: Duffy Gillman
+    - git_user_email: duffy@gillman.net
     - osx_defaults:
       - domain: 'com.apple.dock'
         key: 'autohide'
