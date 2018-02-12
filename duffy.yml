@@ -4,8 +4,8 @@
   connection: local
 
   tasks:
-#    - homebrew_tap:
-#        name: caskroom/fonts       
+    - homebrew_tap:
+        name: caskroom/fonts       
     - name: install home brew applications
       homebrew: name={{item}} state=latest
       with_items:
@@ -23,6 +23,7 @@
         - skype
         - slack
         - sublime-text
+        - zoom
 #        - kaleidoscope
 #        - hazel
 #        - tower
@@ -67,8 +68,8 @@
 #      with_items:
 #        - { regexp: '^roderik', line: 'roderik ALL=(ALL) NOPASSWD: ALL' }
 
-#  roles:
-#    - profile-all
+  roles:
+    - profile-all
 #    - profile-developer
 
   vars:
