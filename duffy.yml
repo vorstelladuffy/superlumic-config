@@ -17,6 +17,7 @@
       with_items:
         - docker
         - google-chrome
+        - google-drive-file-stream
 # original to superlumic-config - allows preventing screen sleep
         - keepingyouawake
         - skype
@@ -35,7 +36,6 @@
 #        - jaxx
 #        - visual-studio-code
 #        - font-fira-code
-#        - google-drive-file-stream
     - name: create ssh directory
       become: yes
       file:
