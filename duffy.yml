@@ -9,6 +9,7 @@
     - name: install home brew applications
       homebrew: name={{item}} state=latest
       with_items:
+        - awscli
         - go
         - tmux       
     - name: install personal cask applications
