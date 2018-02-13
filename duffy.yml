@@ -9,7 +9,7 @@
         src: files/.tmux.conf
         dest: /Users/duffy/.tmux.conf
         owner: duffy
-        group: duffy
+        group: staff
         mode: 0600
     - homebrew_tap:
         name: caskroom/fonts       
