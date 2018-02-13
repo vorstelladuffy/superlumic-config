@@ -10,20 +10,21 @@
       homebrew: name={{item}} state=latest
       with_items:
         - awscli
-        - go
         - tmux       
     - name: install personal cask applications
       homebrew_cask: name={{item}} state=present
       with_items:
         - docker
         - google-chrome
+        - google-cloud-sdk
         - google-drive-file-stream
+        - java8
 # original to superlumic-config - allows preventing screen sleep
         - keepingyouawake
         - skype
         - slack
         - sublime-text
-        - zoom
+        - zoomus
 #        - kaleidoscope
 #        - hazel
 #        - tower
