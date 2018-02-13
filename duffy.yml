@@ -5,12 +5,12 @@
 
   tasks:
     - name: configure tmux
-      file:
-        src: .tmux.conf
+      copy:
         dest: .tmux.conf
         owner: duffy
         group: duffy
         mode: 0600
+        state: file
     - homebrew_tap:
         name: caskroom/fonts       
     - name: install home brew applications
