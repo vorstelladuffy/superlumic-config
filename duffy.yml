@@ -6,6 +6,7 @@
   tasks:
     - name: configure tmux
       copy:
+        src: files/.tmux.conf
         dest: .tmux.conf
         owner: duffy
         group: duffy
