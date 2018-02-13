@@ -33,6 +33,7 @@
         - skype
         - slack
         - sublime-text
+        - vagrant
         - virtualbox
         - zoomus
 #        - kaleidoscope
@@ -86,7 +87,7 @@
   vars:
     - computername: yttrium
     - git_user_name: Duffy Gillman
-    - git_user_email: duffy@vorstella.comß
+    - git_user_email: duffy@vorstella.com
     - osx_defaults:
       - domain: 'com.apple.dock'
         key: 'autohide'
