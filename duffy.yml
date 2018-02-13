@@ -4,6 +4,13 @@
   connection: local
 
   tasks:
+    - name: configure tmux
+      file:
+        src: .tmux.conf
+        dest: .tmux.conf
+        owner: duffy
+        group: duffy
+        mode: 0600
     - homebrew_tap:
         name: caskroom/fonts       
     - name: install home brew applications
