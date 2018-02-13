@@ -7,7 +7,7 @@
     - name: configure tmux
       copy:
         src: files/.tmux.conf
-        dest: .tmux.conf
+        dest: /Users/duffy/.tmux.conf
         owner: duffy
         group: duffy
         mode: 0600
@@ -85,7 +85,7 @@
   vars:
     - computername: yttrium
     - git_user_name: Duffy Gillman
-    - git_user_email: duffy@gillman.net
+    - git_user_email: duffy@vorstella.comß
     - osx_defaults:
       - domain: 'com.apple.dock'
         key: 'autohide'
