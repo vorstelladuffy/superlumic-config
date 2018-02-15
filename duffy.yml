@@ -17,6 +17,7 @@
       homebrew: name={{item}} state=latest
       with_items:
         - awscli
+        - jq
         - maven
         - tmux       
     - name: install personal cask applications
