@@ -19,6 +19,7 @@
         - awscli
         - jq
         - maven
+        - node
         - tmux       
     - name: install personal cask applications
       homebrew_cask: name={{item}} state=present
