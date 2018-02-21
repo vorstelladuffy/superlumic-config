@@ -16,6 +16,7 @@
     - name: install home brew applications
       homebrew: name={{item}} state=latest
       with_items:
+        - ant
         - awscli
         - gnupg
         - gnuplot
