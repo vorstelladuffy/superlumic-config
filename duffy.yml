@@ -18,6 +18,7 @@
       with_items:
         - awscli
         - gnupg
+        - gnuplot
         - jq
         - maven
         - node
