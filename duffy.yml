@@ -20,17 +20,18 @@
         - awscli
         - gnupg
         - gnuplot
+        - gradle
         - jq
-        - kubectl
+        - kubernetes-cli
         - maven
         - node
-        - tmux       
+        - tmux
+        - watch
     - name: install personal cask applications
       homebrew_cask: name={{item}} state=present
       with_items:
         - docker
         - google-chrome
-        - google-cloud-sdk
         - google-drive-file-stream
         - intellij-idea-ce
         - java8
