@@ -28,7 +28,7 @@
         - python
         - tmux
         - virtualenv
-        - virtualenvwrapper
+#        - virtualenvwrapper
         - watch
     - name: install personal cask applications
       homebrew_cask: name={{item}} state=present
