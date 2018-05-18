@@ -25,7 +25,10 @@
         - kubernetes-cli
         - maven
         - node
+        - python
         - tmux
+        - virtualenv
+        - virtualenvwrapper
         - watch
     - name: install personal cask applications
       homebrew_cask: name={{item}} state=present
