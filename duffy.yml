@@ -27,8 +27,8 @@
         - node
         - python
         - tmux
-        - virtualenv
-#        - virtualenvwrapper
+        - pyenv-virtualenv
+        - pyenv-virtualenvwrapper
         - watch
     - name: install personal cask applications
       homebrew_cask: name={{item}} state=present
@@ -132,10 +132,10 @@
         key: 'InitialKeyRepeat'
         type: integer
         value: 15
-      - domain: 'com.apple.menuextra.clock'
-        key: 'DateFormat'
-        type: string
-        value: EEE MMM d  HH:mm
+#      - domain: 'com.apple.menuextra.clock'
+#        key: 'DateFormat'
+#        type: string
+#        value: EEE MMM d  HH:mm
       - domain: 'com.apple.menuextra.battery'
         key: 'ShowPercent'
         type: string
